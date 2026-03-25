@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         MultiSoup Geospace 住所検索バー（試作）
+// @name         MultiSoup Geospace 住所検索バー
 // @namespace    https://multisoup.co.jp/
-// @version      0.1.0
-// @description  geospace.php に住所検索UIを後付けし、取得した座標へ地図中心を移動する試作スクリプト
+// @version      1.0.0
+// @description  geospace.php に住所検索UIを後付けし、住所/座標から地図中心を移動するユーザースクリプト
 // @match        https://multisoup.co.jp/map/geospace.php*
 // @run-at       document-idle
 // @grant        unsafeWindow
@@ -345,7 +345,7 @@
     panel.style.boxShadow = '0 1px 4px rgba(0,0,0,0.2)';
 
     const title = document.createElement('div');
-    title.textContent = '住所検索（試作）';
+    title.textContent = '住所検索';
     title.style.fontWeight = 'bold';
     title.style.marginBottom = '6px';
 
